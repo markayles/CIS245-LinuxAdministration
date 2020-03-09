@@ -1,0 +1,29 @@
+1. Print all lines containing the string San .
+grep San datebook
+
+2. Print all lines where the person's first name starts with J .
+grep ^J datebook
+
+3. Print all lines ending in 700 .
+grep 700$ datebook
+
+4. Print all lines that don't contain 834 .
+grep -v 834 datebook
+
+5. Print all lines where birthdays are in December .
+grep -E ':12/.+/.+:' datebook
+
+6. Print all lines where the phone number is in the 408 area code.
+grep 408-...-.... datebook
+
+7. Print all lines containing an uppercase letter, followed by four lowercase letters , a comma, a space, and one uppercase letter.
+grep '[A-Z][a-z]\{4\}, [A-Z]' datebook
+
+8. Print lines where the last name begins with K or k .
+grep -E '^[A-Za-Z]+ [Kk]' datebook
+
+9. Print lines preceded by a line number where the salary is a six-figure number.
+grep -En '[0-9]{6}$' datebook
+
+10. Print lines containing Lincoln or lincoln (remember that grep is insensitive to case).
+grep [Ll]incoln datebook
