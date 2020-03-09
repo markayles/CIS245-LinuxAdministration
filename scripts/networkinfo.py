@@ -1,3 +1,7 @@
+#
+# This script dumps some network information and current connections to a file located in ~/networkdumps/. The folder will automatically be created if it does not already exist. A new file is created each time the command is run. No special parameters are needed. You can run this from any location.
+#
+
 import os 
 from datetime import *
 
